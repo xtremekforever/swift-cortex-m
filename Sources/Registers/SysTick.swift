@@ -1,7 +1,7 @@
 import MMIO
 
 @RegisterBlock
-public struct SysTick {
+public struct SysTick: Sendable {
     @RegisterBlock(offset: 0x0)
     public var csr: Register<CSR>
 
@@ -17,7 +17,7 @@ public struct SysTick {
 
 extension SysTick {
     @Register(bitWidth: 32)
-    public struct CSR {
+    public struct CSR: Sendable {
         @ReadWrite(bits: 0..<1)
         public var enable: ENABLE
 
@@ -32,19 +32,19 @@ extension SysTick {
     }
 
     @Register(bitWidth: 32)
-    public struct RVR {
+    public struct RVR: Sendable {
         @ReadWrite(bits: 0..<24)
         public var reload: RELOAD
     }
 
     @Register(bitWidth: 32)
-    public struct CVR {
+    public struct CVR: Sendable {
         @ReadWrite(bits: 0..<24)
         public var current: CURRENT
     }
 
     @Register(bitWidth: 32)
-    public struct CALIB {
+    public struct CALIB: Sendable {
         @ReadWrite(bits: 0..<24)
         public var tenms: TENMS
 
