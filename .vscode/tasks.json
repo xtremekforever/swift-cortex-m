@@ -4,7 +4,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "swift: Build Registers",
+            "label": "swift: Build CortexM",
             "type": "shell",
             "command": "swift build -c release",
             "problemMatcher": [],
