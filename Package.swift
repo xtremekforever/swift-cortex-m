@@ -11,7 +11,7 @@ let package = Package(
             name: "CortexM", targets: ["Registers"])
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-mmio", branch: "fix")
+        .package(url: "https://github.com/apple/swift-mmio", branch: "swift-embedded-examples")
     ],
     targets: [
         // Targets are the basic building blocks of a package, defining a module or a test suite.
@@ -20,6 +20,9 @@ let package = Package(
             name: "Registers",
             dependencies: [
                 .product(name: "MMIO", package: "swift-mmio")
+            ],
+            swiftSettings: [
+                .enableExperimentalFeature("Embedded")
             ]
         ),
         .testTarget(

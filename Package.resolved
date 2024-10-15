@@ -1,5 +1,5 @@
 {
-  "originHash" : "065622f63636f74bf4da4d02229f2f2255315b971864b0c986c1dbc681ee287e",
+  "originHash" : "8bd7da34640dc8bd0d73bcf05d5f5710ba11891728bb5407c2fa9aef47f56574",
   "pins" : [
     {
       "identity" : "swift-argument-parser",
@@ -15,8 +15,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/apple/swift-mmio",
       "state" : {
-        "branch" : "fix",
-        "revision" : "48e7852483499a81a7e775ff52ebb2b81b0a36ad"
+        "branch" : "swift-embedded-examples",
+        "revision" : "06d96ed4916739f2edafde87f3951b2d2a04df65"
       }
     },
     {
