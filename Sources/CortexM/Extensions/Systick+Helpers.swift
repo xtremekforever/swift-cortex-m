@@ -77,12 +77,12 @@ extension SysTick {
 
     /// Delay processor by using SysTick register as a tick source.
     ///
-    /// This assumes that `systick` is _configured and enabled_. Otherwise, the method
-    /// will stay locked forever!!
+    /// Warning: this assumes that `systick` is _configured and enabled_. Otherwise, this method
+    /// will stay locked forever.
     ///
     /// - Parameter ticks: number of systick "ticks" to delay by.
     ///
-    public func delay(ticks: Int) {
+    public func delay(ticks: UInt32) {
         for _ in 0...ticks {
             while !triggered {}
         }
