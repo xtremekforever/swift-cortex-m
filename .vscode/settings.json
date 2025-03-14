@@ -1,4 +1,5 @@
 {
-    "editor.formatOnSave": true,
-    "swift.disableAutoResolve": true,
+    "[swift]": {
+        "editor.formatOnSave": true,
+    }
 }

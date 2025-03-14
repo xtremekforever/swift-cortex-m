@@ -4,9 +4,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "swift: Build CortexM",
+            "label": "swift: Build (stm32c0xx)",
             "type": "shell",
-            "command": "swift build -c release",
+            "command": "./Targets/build-stm32c0xx.sh",
             "problemMatcher": [],
             "group": {
                 "kind": "build",
