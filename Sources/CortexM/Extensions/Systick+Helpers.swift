@@ -1,3 +1,5 @@
+import MMIO
+
 extension SysTick {
 
     /// Clock source for the SysTick timer.
